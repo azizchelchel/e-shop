@@ -1,17 +1,19 @@
+"use client";
 import React from "react";
 import { Link } from "react-router-dom";
 import StarRatings from "react-star-ratings";
-import Filters from "../layout/Filters";
-import Header from "../layout/Header";
+// import Filters from "../layout/Filters";
+// import Header from "../layout/Header";
 
-const ListProducts = () => {
+const ListProducts = ({ data }) => {
+  console.log(data);
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className="py-12">
         <div className="container max-w-screen-xl mx-auto px-4">
           <div className="flex flex-col md:flex-row -mx-4">
-            <Filters />
+            {/* <Filters /> */}
 
             <main className="md:w-2/3 lg:w-3/4 px-3">
               <article className="border border-gray-200 overflow-hidden bg-white shadow-sm rounded mb-5">
